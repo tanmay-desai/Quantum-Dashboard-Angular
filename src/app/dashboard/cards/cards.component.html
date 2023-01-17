@@ -1,0 +1,62 @@
+<div class="cards">
+  <div class="card-item" *ngFor="let course of courseList">
+    <div class="star" [ngClass]="{ star_disabled: !course.star }">
+      <img src="../../../assets/icons/favourite.svg" alt="" />
+    </div>
+    <div class="card-details">
+      <div class="card-image">
+        <img [src]="course.imageSrc" />
+      </div>
+      <div class="card-text">
+        <p class="text-title">
+          {{ course.title }}
+        </p>
+        <div class="flex-row" style="margin-top: 7px">
+          {{ course.subject }}
+          <div class="divi"></div>
+          {{ course.grade }}
+          <span style="color: #1f7a54; margin-left: 2px">
+            {{ course.gPlus }}
+          </span>
+        </div>
+        <div class="flex-row" *ngIf="!course.isExpired">
+          <div class="bold">{{ course.units }}</div>
+          Units
+          <div class="bold">{{ course.lessons }}</div>
+          Lessons
+          <div class="bold">{{ course.topics }}</div>
+          Topics
+        </div>
+        <div
+          class="custom-select card-select"
+          [ngClass]="{ disabled: course.isDisabled }"
+        >
+          <select [disabled]="course.isDisabled">
+            <option value="1">{{ course.selectOptions[0] }}</option>
+            <option value="1">{{ course.selectOptions[1] }}</option>
+            <option value="1">{{ course.selectOptions[2] }}</option>
+          </select>
+        </div>
+        <div class="flex-row">
+          <p style="margin-right: 17px">
+            <span *ngIf="course.numberOfStudents">
+              {{ course.numberOfStudents }} Students
+            </span>
+          </p>
+          <p>{{ course.date }}</p>
+        </div>
+        <div class="flex-row"></div>
+        <div [ngClass]="{ expired: course.isExpired }" *ngIf="course.isExpired">
+          Expired
+        </div>
+      </div>
+    </div>
+    <div class="card-divider"></div>
+    <div class="card-icons">
+      <img src="./assets/icons/preview.svg" alt="" style="height: 24px" />
+      <img src="./assets/icons/manage course.svg" alt="" />
+      <img src="./assets/icons/grade submissions.svg" alt="" />
+      <img src="./assets/icons/reports.svg" alt="" style="height: 24px" />
+    </div>
+  </div>
+</div>

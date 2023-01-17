@@ -1,0 +1,174 @@
+.custom-select{
+    margin-top: -10px;
+}
+.custom-select select {
+    appearance: none;
+    margin-top: 5px;
+    height: 28px;
+    width:170px;
+    padding-bottom: 3px;
+    background-color: #EEEEEE;
+    margin-left: 6px;
+    background-image: url('../../../assets/icons/arrow-down.svg');
+    background-position:154px center;
+    background-repeat: no-repeat;
+    float: right;
+    border:0px;
+    outline:0px;
+    font-family: 'quicksand';
+    font-size: 16px;
+    font-weight: 600;
+    color: #1F2834;
+    border-bottom: 1px solid #0000003a;
+    vertical-align: bottom;
+    
+}
+.arrow{
+    margin-left: 32px;
+    height: 24px;
+}
+.cards{
+    margin-top: 16px;
+    display: grid;
+    width: 976px;
+    height: 517px;
+    grid-template-columns: repeat(2, 476px) ;
+    grid-template-rows: repeat(2,246px);
+    grid-gap: 25px;
+}
+.card-item{
+    position: relative;
+    background-color: white;
+    width: 476px;
+    height: 246px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.card-details{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 24px 0  0 24px
+}
+.card-details img{
+    height: 157px;
+    width: 132px;
+}
+.card-image{
+    font-size: 0px;
+}
+.card-text{
+    max-width: 264px;
+    height: 157px;
+    margin-left: 16px;
+    margin-right: 25px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.card-text p{
+    margin: 0;
+    padding: 0;
+}
+.text-title{
+    align-items: center;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222222;
+    width: 240px;
+}
+.flex-row{
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    height: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #616161;
+}
+.flex-row .divi{
+    height: 12px;
+    margin: 0 8px ;
+    width: 1px;
+    background-color: #000000;
+    opacity: 0.12;
+}
+.card-select{
+    background-color: #ffffff;
+    margin-top: 16px;
+    width: 264px;
+}
+.card-select select{
+    width: 100%;
+    background-color: #ffffff;
+    background-position: 244px center;
+    padding-bottom: 3px;
+    font-size: 16px;
+    color: #1F2834;
+}
+.card-icons{
+    margin-top: 15px;
+    display: flex;
+    align-self: center;
+}
+.card-icons img:first-child{
+    margin-right: 0;
+    margin-left: 0px;
+}
+.card-icons img{
+    height: 20px;
+    width: auto;
+    margin-left: 101px;
+}
+.card-divider{
+    width: 428px;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.12;
+    margin-top: 16px;
+    align-self: center;
+}
+.expired{
+    position: absolute;
+    color: #D80000;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    border: 2px;
+    width: 52px;
+    height: 18px;
+    background-color: #FFE4E6;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 2px;
+    box-sizing: border-box;
+}
+.star{
+    position: absolute;
+    height: 24px;
+    width: 20px;
+    top: 25px;
+    right: 25px;
+}
+.star_disabled{
+    filter: grayscale(100%);
+}
+.disabled{
+    opacity: 0.6
+}
+.bold{
+    color: #222222;
+    font-weight: bold;
+    margin: 0 6px;
+}
+.bold:first-child{
+    margin-left: 0;
+}

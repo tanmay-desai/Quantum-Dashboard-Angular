@@ -1,0 +1,8 @@
+.divider{
+    width: 976px;
+height: 1px;
+/* UI Properties */
+background: #000000 0% 0% no-repeat padding-box;
+opacity: 0.12;
+margin-top: 16px;
+}

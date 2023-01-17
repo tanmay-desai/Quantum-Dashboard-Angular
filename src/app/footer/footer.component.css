@@ -1,0 +1,27 @@
+footer{
+    width: 100%;
+    height: 40px;
+    background: #E0E1E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    height: 15px;
+    margin-right: 8px;
+    color:#616161;
+}
+
+footer span{
+    height: 24px;
+    /* UI Properties */
+    border: 1px solid #0000001F;
+    margin: 8px 10px 8px 10px;
+}
+.brand{
+    font-weight: 1000 !important;
+}

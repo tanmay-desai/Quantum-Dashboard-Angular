@@ -1,0 +1,11 @@
+.container{
+    height: calc(100vh - 74px - 32px - 56px) ;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 24px;
+    height: 100vh;
+}
