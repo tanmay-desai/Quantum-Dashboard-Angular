@@ -7,6 +7,7 @@
     justify-content: space-around;
 }
 .tab-item{
+    cursor: pointer;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -17,6 +18,7 @@
     width: 100%;
     justify-content: center;
 }
+
 .tab-item span{
     font-size: 24px;
     font-weight: bold;

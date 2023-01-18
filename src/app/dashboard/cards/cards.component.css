@@ -37,6 +37,7 @@
     grid-gap: 25px;
 }
 .card-item{
+    
     position: relative;
     background-color: white;
     width: 476px;
@@ -47,6 +48,7 @@
     justify-content: start;
     box-sizing: border-box;
     border-radius: 2px;
+    transition: all 0.1s ease-in-out;
 }
 .card-details{
     display: flex;
@@ -55,6 +57,7 @@
     padding: 24px 0  0 24px
 }
 .card-details img{
+    cursor: pointer;
     height: 157px;
     width: 132px;
 }
@@ -100,11 +103,13 @@
     opacity: 0.12;
 }
 .card-select{
+    
     background-color: #ffffff;
     margin-top: 16px;
     width: 264px;
 }
 .card-select select{
+    cursor: pointer;
     width: 100%;
     background-color: #ffffff;
     background-position: 244px center;
@@ -113,6 +118,7 @@
     color: #1F2834;
 }
 .card-icons{
+    cursor: pointer;
     margin-top: 15px;
     display: flex;
     align-self: center;
@@ -171,4 +177,8 @@
 }
 .bold:first-child{
     margin-left: 0;
+}
+.card-item:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.005);
 }

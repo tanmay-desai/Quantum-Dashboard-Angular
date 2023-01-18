@@ -24,6 +24,7 @@ nav > img{
     margin-right: 24px;
 }
 .nav-item{
+    cursor: pointer;
     position: relative;
     box-sizing: border-box;
     padding: 4px;
@@ -37,6 +38,9 @@ nav > img{
     font-weight: medium;
     color:#3FD28B;
     text-transform: uppercase;
+}
+.nav-item:hover{
+    opacity: .5;
 }
 .alert{
     position: absolute;
